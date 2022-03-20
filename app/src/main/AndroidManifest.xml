@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APP_RESTAURANTE">
         <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.APP_RESTAURANTE.NoActionBar" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
