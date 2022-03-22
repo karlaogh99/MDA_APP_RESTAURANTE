@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -25,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
 
-    private SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +44,6 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(text_email, text_password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                sharedPref = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
-
-                SharedPreferences.Editor editor = sharedPref.edit();
-
-                editor.putString("username", text_email);
-
-                editor.commit(); // only after commit() data is saved in sharedPreferences
 
                 Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
