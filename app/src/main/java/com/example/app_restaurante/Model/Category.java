@@ -1,6 +1,8 @@
 package com.example.app_restaurante.Model;
 
-public class Category {
+import java.io.Serializable;
+
+public class Category implements Serializable {
 
     private String image;
     private String name;

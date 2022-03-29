@@ -1,13 +1,15 @@
 package com.example.app_restaurante.Model;
 
+import java.io.Serializable;
+
 public class Food {
     private String descripcion;
     private String name;
     private String id;
     private String image;
-    private int price;
+    private String price;
 
-    public Food(String descripcion, String name, String id, String image, int price) {
+    public Food(String descripcion, String name, String id, String image, String price) {
         this.descripcion = descripcion;
         this.name = name;
         this.id = id;
@@ -47,11 +49,11 @@ public class Food {
         this.image = image;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

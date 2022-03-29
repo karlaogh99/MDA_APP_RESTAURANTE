@@ -13,4 +13,7 @@
     <string name="my_restaurant_app">My Restaurant APP</string>
     <string name="hello_explore_your_dream_food">hello explore your dream food</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
