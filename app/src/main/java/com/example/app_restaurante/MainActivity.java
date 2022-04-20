@@ -96,51 +96,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Insertar menu de BD
-        recycler_menu=(RecyclerView)findViewById(R.id.menu);
-        recycler_menu.setHasFixedSize(true);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recycler_menu.setLayoutManager(layoutManager);
-        System.out.print("f");
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         // Read from the database
-        listCategory=new ArrayList<>();
 
-        db.collection("Category")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                Category cat=new Category("","");
-                                cat.setName((String) document.get("Nombre"));
-                                cat.setImage((String)document.get("Image"));
-
-                                listCategory.add(cat);
-
-                            }
-                            AdapterCategory adapter=new AdapterCategory(listCategory, new AdapterCategory.OnItemClickListener() {
-                                @Override
-                                public void onItemClick(Category cat) {
-                                    moveToDescription(cat);
-                                }
-                            });
-                            recycler_menu.setAdapter(adapter);
-
-
-                        }
-                    }
-                });
 
 
     }
 
-    public void moveToDescription(Category cat){
-        Intent intent= new Intent(this,FoodListActivity.class);
-        intent.putExtra("Categoria", cat);
-        startActivity(intent);
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APP_Restaurante">
         <activity
+            android:name=".AddFoodActivity"
+            android:exported="false" />
+        <activity
             android:name=".FoodListActivity"
             android:exported="false" />
         <activity

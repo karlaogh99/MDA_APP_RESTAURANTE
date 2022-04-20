@@ -57,4 +57,5 @@ public class LoginActivity extends AppCompatActivity {
 
         loginUser(text_email, text_password);
     }
+
 }

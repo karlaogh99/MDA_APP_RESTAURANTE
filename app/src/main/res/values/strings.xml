@@ -16,4 +16,10 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="add_food">Add Food</string>
+    <string name="nombre_del_plato">Nombre del plato</string>
+    <string name="descripcion_del_plato">Descripcion del plato</string>
+    <string name="price">price</string>
+    <string name="category">category</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
