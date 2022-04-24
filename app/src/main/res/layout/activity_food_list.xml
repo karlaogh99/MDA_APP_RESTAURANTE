@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.MenuFragment">
-
-    <TextView
-        android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".FoodListActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Menu"
-        />
+        tools:ignore="MissingConstraints"
+        android:id="@+id/recycler_food"
+        android:scrollbars="vertical"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

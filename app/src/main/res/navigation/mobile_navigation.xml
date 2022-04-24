@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_reserva"
+        android:name="com.example.app_restaurante.ui.reservas.ReservaFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_reserva" />
+
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.app_restaurante.ui.gallery.MenuFragment"
         android:label="@string/menu_gallery"
@@ -20,6 +26,23 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.app_restaurante.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Menu"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_AddFoodFragment"
+        android:name="com.example.app_restaurante.ui.AddFood.AddFoodFragment"
+        android:label="Add food"
+        tools:layout="@layout/fragment_add_food_fragment" />
+    <activity
+        android:id="@+id/newReservaActivity"
+        android:name="com.example.app_restaurante.ui.reservas.NewReservaActivity"
+        android:label="activity_new_reserva"
+        tools:layout="@layout/activity_new_reserva" />
+    <activity
+        android:id="@+id/myReservasActivity"
+        android:name="com.example.app_restaurante.ui.reservas.MyReservasActivity"
+        android:label="activity_my_reservas"
+        tools:layout="@layout/activity_my_reservas" />
+
+
 </navigation>

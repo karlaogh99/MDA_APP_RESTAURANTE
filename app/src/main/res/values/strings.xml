@@ -13,4 +13,13 @@
     <string name="my_restaurant_app">My Restaurant APP</string>
     <string name="hello_explore_your_dream_food">hello explore your dream food</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="add_food">Add Food</string>
+    <string name="nombre_del_plato">Nombre del plato</string>
+    <string name="descripcion_del_plato">Descripcion del plato</string>
+    <string name="price">price</string>
+    <string name="category">category</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
