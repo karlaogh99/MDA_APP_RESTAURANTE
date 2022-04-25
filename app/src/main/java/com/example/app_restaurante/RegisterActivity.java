@@ -60,6 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("email", text_email);
                     user.put("password", text_password);
+                    user.put("gerente", false);
 
                     // Add a new document with a ID
                     db.collection("User")
