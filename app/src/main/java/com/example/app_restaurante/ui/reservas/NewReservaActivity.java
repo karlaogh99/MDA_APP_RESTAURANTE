@@ -3,6 +3,7 @@ package com.example.app_restaurante.ui.reservas;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
+import com.example.app_restaurante.LoginActivity;
+import com.example.app_restaurante.MainActivity;
 import com.example.app_restaurante.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -69,12 +72,14 @@ public class NewReservaActivity extends AppCompatActivity {
         Map<String, Object> reserva = new HashMap<>();
         reserva.put("date", reserveDate);
         reserva.put("username", currentUser.getEmail());
+        reserva.put("gerente", false);
         db.collection("Reservas")
                 .add(reserva)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Log.d("", "Reserva added with ID: " + documentReference.getId());
+                        startActivity(new Intent(NewReservaActivity.this, ReservaFragment.class));
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
