@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -43,23 +44,34 @@ public class FoodListActivity extends AppCompatActivity {
                             Category catId=(Category)getIntent().getSerializableExtra("Categoria");
 
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                if(catId.getName().equals((String)document.get("IdCategoria"))){
+                                if(catId.getName().equals((String)document.get("idcategory"))){
                                     Food food=new Food("","","","","");
-                                    food.setName((String) document.get("Nombre"));
-                                    food.setDescripcion((String) document.get("Descripcion"));
-                                    food.setId((String) document.get("IdCategoria"));
-                                    food.setPrice((String) document.get("Precio"));
-                                    food.setImage((String)document.get("Image"));
+                                    food.setName((String) document.get("name"));
+                                    food.setDescripcion((String) document.get("description"));
+                                    food.idcategory=((String) document.get("idcategory"));
+                                    food.setPrice((String) document.get("price"));
+                                    food.setId((String) document.getId());
+
                                     listFood.add(food);
                                 }
 
 
                             }
-                            AdapterFood adapter=new AdapterFood(listFood);
+                            AdapterFood adapter=new AdapterFood(listFood, new AdapterFood.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(Food food) {
+                                    moveToDescription(food);
+                                }
+                            });
                             recycler_menu.setAdapter(adapter);
                         }
                     }
                 });
 
+    }
+    public void moveToDescription(Food food){
+        Intent intent= new Intent(this, FoodInformationActivity.class);
+        intent.putExtra("Food", food);
+        startActivity(intent);
     }
 }

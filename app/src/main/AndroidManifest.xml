@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APP_Restaurante">
         <activity
+            android:name=".FoodInformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.reservas.MyReservasActivity"
             android:exported="false" />
         <activity

@@ -39,10 +39,10 @@ public class AddFoodActivity extends AppCompatActivity {
     public void add_food(View view) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
-        user.put("Nombre", name.getText().toString());
-        user.put("IdCategoria", category.getText().toString());
-        user.put("Precio", price.getText().toString());
-        user.put("Descripcion", desc.getText().toString());
+        user.put("name", name.getText().toString());
+        user.put("idcategory", category.getText().toString());
+        user.put("price", price.getText().toString()+"€");
+        user.put("description", desc.getText().toString());
         db.collection("Food")
                 .add(user)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
