@@ -113,7 +113,7 @@
             tools:layout_editor_absoluteY="450dp" />
 
         <Button
-            android:id="@+id/add_food"
+            android:id="@+id/create_reserva"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"

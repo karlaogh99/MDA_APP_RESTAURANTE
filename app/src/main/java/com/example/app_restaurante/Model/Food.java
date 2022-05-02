@@ -2,27 +2,28 @@ package com.example.app_restaurante.Model;
 
 import java.io.Serializable;
 
-public class Food {
-    private String descripcion;
+public class Food implements Serializable{
+    private String description;
     private String name;
     private String id;
-    private String image;
+    public String idcategory;
+
     private String price;
 
-    public Food(String descripcion, String name, String id, String image, String price) {
-        this.descripcion = descripcion;
+    public Food(String description, String name, String id, String image, String price) {
+        this.description = description;
         this.name = name;
         this.id = id;
-        this.image = image;
+
         this.price = price;
     }
 
     public String getDescripcion() {
-        return descripcion;
+        return description;
     }
 
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+        this.description = descripcion;
     }
 
     public String getName() {
@@ -41,13 +42,6 @@ public class Food {
         this.id = id;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
     public String getPrice() {
         return price;
