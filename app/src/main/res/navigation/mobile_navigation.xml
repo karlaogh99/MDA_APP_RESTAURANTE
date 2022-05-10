@@ -43,6 +43,11 @@
         android:name="com.example.app_restaurante.ui.reservas.MyReservasActivity"
         android:label="activity_my_reservas"
         tools:layout="@layout/activity_my_reservas" />
+    <fragment
+        android:id="@+id/nav_reservas_gerente"
+        android:name="com.example.app_restaurante.ui.reservas.gerente.ReservaFragmentGerente"
+        android:label="fragment_reserva_gerente"
+        tools:layout="@layout/fragment_reserva_gerente" />
 
 
 </navigation>

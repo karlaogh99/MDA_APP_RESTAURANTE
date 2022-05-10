@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APP_Restaurante">
         <activity
+            android:name=".ui.reservas.Detail_List"
+            android:exported="false" />
+        <activity
             android:name=".FoodInformationActivity"
             android:exported="false" />
         <activity
@@ -29,6 +32,9 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reservas.gerente.MyReservasActivity_gerente"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
