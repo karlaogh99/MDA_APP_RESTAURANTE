@@ -23,4 +23,7 @@
     <string name="category">category</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="editar_comida">Editar comida</string>
+    <string name="rating">Rating</string>
+    <string name="guardar_valoraci_n">guardar valoración</string>
+    <string name="valoraci_n_del_restaurante">Valoración del restaurante</string>
 </resources>

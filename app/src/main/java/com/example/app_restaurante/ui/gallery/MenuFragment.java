@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import com.example.app_restaurante.AddFoodActivity;
 import com.example.app_restaurante.MainActivity;
 import com.example.app_restaurante.R;
+import com.example.app_restaurante.RatingActivity;
 
 
 public class MenuFragment extends Fragment {
@@ -26,7 +27,7 @@ public class MenuFragment extends Fragment {
         return root;
     }
     public void moveToDescription(){
-        Intent intent= new Intent(getActivity(), AddFoodActivity.class);
+        Intent intent= new Intent(getActivity(), RatingActivity.class);
         startActivity(intent);
     }
 
