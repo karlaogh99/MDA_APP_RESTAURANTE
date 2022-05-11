@@ -28,6 +28,9 @@
             android:name=".FoodListActivity"
             android:exported="false" />
         <activity
+            android:name=".RatingActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

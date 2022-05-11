@@ -14,6 +14,8 @@ import com.example.app_restaurante.Model.Category;
 import com.example.app_restaurante.Model.Food;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FoodInformationActivity extends AppCompatActivity {
@@ -25,14 +27,24 @@ public class FoodInformationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         setContentView(R.layout.activity_food_information);
         name=findViewById(R.id.name_food);
         desc=findViewById(R.id.description_food);
         price=findViewById(R.id.price_food);
+        edit=findViewById(R.id.edit_food);
         food=(Food)getIntent().getSerializableExtra("Food");
         name.setText(food.getName());
         desc.setText(food.getDescripcion());
         price.setText(food.getPrice());
+        if(!user.getEmail().equals("yuncai@gmail.com")){
+            edit.setVisibility(View.GONE);
+            name.setEnabled(false);
+            desc.setEnabled(false);
+            price.setEnabled(false);
+        }
+
     }
 
     public void edit_food(View view) {

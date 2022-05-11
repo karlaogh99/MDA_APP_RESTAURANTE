@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/border_color/baseline_border_color_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/star_rate/baseline_star_rate_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_baseline_border_color_24" />
+                            <entry key="outputName" value="ic_baseline_star_rate_24" />
+                            <entry key="sourceFile" value="C:\Users\ortiz\OneDrive\Escritorio\proyects\MDA_APP_RESTAURANTE_EXPONER\MDA_APP_RESTAURANTE" />
                           </map>
                         </option>
                       </PersistentState>

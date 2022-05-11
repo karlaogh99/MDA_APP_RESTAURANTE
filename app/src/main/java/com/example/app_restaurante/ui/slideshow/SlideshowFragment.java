@@ -36,7 +36,7 @@ public class SlideshowFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_slideshow,container,false);
         listCategory=new ArrayList<>();
-        recycler_menu=(RecyclerView)getActivity().findViewById(R.id.menu);
+        recycler_menu=getActivity().findViewById(R.id.menu);
         recycler_menu.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recycler_menu.setLayoutManager(layoutManager);

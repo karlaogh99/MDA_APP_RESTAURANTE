@@ -1,4 +1,4 @@
-package com.example.app_restaurante.ui.gallery;
+package com.example.app_restaurante.ui.Rating;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,25 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.app_restaurante.AddFoodActivity;
-import com.example.app_restaurante.MainActivity;
+import com.example.app_restaurante.Model.Category;
 import com.example.app_restaurante.R;
 import com.example.app_restaurante.RatingActivity;
 
-
-public class MenuFragment extends Fragment {
-
-
+public class RatingFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_add_food_fragment,container,false);
+
+        View root = inflater.inflate(R.layout.fragment_rating,container,false);
         moveToDescription();
         return root;
     }
     public void moveToDescription(){
-        Intent intent= new Intent(getActivity(), AddFoodActivity.class);
+        Intent intent= new Intent(getActivity(), RatingActivity.class);
         startActivity(intent);
     }
-
 }
