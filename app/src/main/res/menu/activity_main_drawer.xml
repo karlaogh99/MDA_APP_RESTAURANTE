@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -9,10 +10,6 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_comida_add"
-            android:title="Añadir Comida" />
-        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu"
             android:title="Menu" />
@@ -21,4 +18,17 @@
             android:icon="@drawable/ic_reservas"
             android:title="Reservas" />
     </group>
+
+
+    <group android:id="@+id/menu_gerente">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_comida_add"
+            android:title="Añadir Comida" />
+        <item
+            android:id="@+id/nav_reservas_gerente"
+            android:icon="@drawable/ic_baseline_border_color_24"
+            android:title="Ver Reservas" />
+    </group>
+
 </menu>

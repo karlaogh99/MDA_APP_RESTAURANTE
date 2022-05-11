@@ -56,6 +56,28 @@
         <entry key="..\:/Users/ortiz/OneDrive/Escritorio/universidad/MDA_APP_RESTAURANTE/app/src/main/res/layout/fragment_slideshow.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/ortiz/OneDrive/Escritorio/universidad/MDA_APP_RESTAURANTE/app/src/main/res/layout/menu_fragment.xml" value="0.175" />
         <entry key="..\:/Users/ortiz/OneDrive/Escritorio/universidad/MDA_APP_RESTAURANTE/app/src/main/res/layout/menu_item.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_detail_list.xml" value="0.2565338134765625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1721014492753623" />
+        <entry key="app/src/main/res/layout/activity_my_reservas.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_new_reserva.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_reservas_gerente.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/food_item.xml" value="0.1721014492753623" />
+        <entry key="app/src/main/res/layout/fragment_add_food_fragment.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3154815673828125" />
+        <entry key="app/src/main/res/layout/fragment_reserva.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_reserva_gerente.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.18490374873353596" />
+        <entry key="app/src/main/res/layout/fragment_time_picker.xml" value="0.13247213779128672" />
+        <entry key="app/src/main/res/layout/menu_fragment.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/menu_item.xml" value="0.1721014492753623" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2864583333333333" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.2864583333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.212" />
       </map>
     </option>
   </component>

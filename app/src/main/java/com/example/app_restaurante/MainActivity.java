@@ -88,6 +88,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        //Ocultar elementos menu lateral
+        if(!user.getEmail().equals("yuncai@gmail.com")){
+            navigationView.getMenu().setGroupVisible(R.id.menu_gerente, false);
+        }else{
+            navigationView.getMenu().getItem(2).setVisible(false);
+        }
+
 
         //Esto es poner en el nav el nombre del usuario
         View headerView = navigationView.getHeaderView(0);
